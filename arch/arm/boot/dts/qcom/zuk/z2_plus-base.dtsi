@@ -129,3 +129,14 @@
 		};
 	};
 };
+
+&firmware {
+        android {
+                fstab {
+                        vendor {
+                                dev = "/dev/block/platform/soc/7464900.sdhci/by-name/factory";
+                        };
+                };
+        };
+}
+
