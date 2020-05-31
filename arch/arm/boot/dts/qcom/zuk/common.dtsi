@@ -362,11 +362,9 @@
 
 &firmware {
 	android {
+		/delete-node/ vbmeta;
 		fstab {
-			vendor {
-				fsmgr_flags = "wait";
-			};
-			system {
+			android_system: system {
 				compatible = "android,system";
 				type = "ext4";
 				mnt_flags = "ro,barrier=1,discard";
@@ -375,4 +373,8 @@
 			};
 		};
 	};
+};
+
+&android_vendor {
+				fsmgr_flags = "wait";
 };
