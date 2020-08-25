@@ -1005,7 +1005,6 @@ config MFSE_QMI
 source "drivers/soc/qcom/memshare/Kconfig"
 
 
-endif # ARCH_MSM
 
 
 config BIG_CLUSTER_MIN_FREQ_ADJUST
