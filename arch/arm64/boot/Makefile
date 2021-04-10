@@ -15,6 +15,8 @@
 #
 
 targets := Image Image.gz
+include $(srctree)/arch/arm64/boot/dts/Makefile
+
 
 DTB_NAMES := $(subst $\",,$(CONFIG_BUILD_ARM64_APPENDED_DTB_IMAGE_NAMES))
 ifneq ($(DTB_NAMES),)
